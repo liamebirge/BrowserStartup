@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<link rel="shortcut icon" href="" />
+		<style type="text/css">
+			header{
+				text-align: center;
+				padding-top:5px;
+				padding-bottom:5px;
+			}
+		</style>
+		<script type="text/javascript">
+			function setup(){
+				var headerText = document.getElementById("varableHeader");
+				var header1 = "Ey Bruther, What Can I Do For Ye?";
+				var header2 = "What's The Plan Dawg?";
+				var header3 = "How Can I Help Today?";
+				var header4 = "Ready To Help!";
+				var header5 = "Let Me Know What I Can Do For You!";
+				var randNum = Math.floor((Math.random() * 5) + 1);
+				if (randNum == 1){headerText.innerHTML = header1;}
+				else if (randNum == 2){headerText.innerHTML = header2;}
+				else if (randNum == 3){headerText.innerHTML = header3;}
+				else if (randNum == 4){headerText.innerHTML = header4;}
+				else if (randNum == 5){headerText.innerHTML = header5;}
+			}
+		</script>
+	</head>
+	<body onload="setup()">
+		<header>
+			<h1 id="varableHeader"></h1>
+		</header>
+		<hr />
+		<section>
+			<div id="linkContainer">
+				<div class="linkBox">
+					<a href="https://netflix.com" target="_blank">
+						<img src="" alt="Click here to go to Netflix.com" />
+						NETFLIX
+					</a>
+				</div>
+				<div class="linkBox">
+					<a href="https://youtube.com" target="_blank">
+						<img src="" alt="Click here to go to YouTube.com" />
+						YouTube
+					</a>
+				</div>
+				<div class="linkBox">
+					<a href="https://liamebirge.github.io/" target="_blank">
+						<img src="" alt="Click here to go to LiamEBirge.GitHub.io" />
+						LiamEBirge.Github.io
+					</a>
+				</div>
+				<div class="linkBox">
+					<a href="https://uvic.ca/" target="_blank">
+						<img src="" alt="Click here to go to UVic.ca" />
+						UVic.ca
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
