@@ -9,6 +9,35 @@
 				padding-top:5px;
 				padding-bottom:5px;
 			}
+			#linkContainer{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-content: flex-start;
+			}
+			.linkBox{
+				margin:5px;
+				border:2px solid black;
+				border-radius: 4px;
+			}
+			a.linkage{
+				padding:8px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				text-align: center;
+				font-size: 30px;
+				text-decoration: none;
+				color:grey;
+			}
+			a.linkage:hover{
+				color:black;
+				text-decoration: underline;
+			}
+			img.linkImg{
+				width:200px;
+				height:auto;
+			}
 		</style>
 		<script type="text/javascript">
 			function setup(){
@@ -35,26 +64,26 @@
 		<section>
 			<div id="linkContainer">
 				<div class="linkBox">
-					<a href="https://netflix.com" target="_blank">
-						<img src="" alt="Click here to go to Netflix.com" />
+					<a class="linkage" href="https://netflix.com" target="_blank">
+						<img class="linkImg" src="data/Netflix.jpg" alt="Click here to go to Netflix.com" />
 						NETFLIX
 					</a>
 				</div>
 				<div class="linkBox">
-					<a href="https://youtube.com" target="_blank">
-						<img src="" alt="Click here to go to YouTube.com" />
+					<a class="linkage" href="https://youtube.com" target="_blank">
+						<img class="linkImg" src="data/Youtube.png" alt="Click here to go to YouTube.com" />
 						YouTube
 					</a>
 				</div>
 				<div class="linkBox">
-					<a href="https://liamebirge.github.io/" target="_blank">
-						<img src="" alt="Click here to go to LiamEBirge.GitHub.io" />
-						LiamEBirge.Github.io
+					<a class="linkage" href="https://liamebirge.github.io/" target="_blank">
+						<img class="linkImg" src="data/Liamebirge.png" alt="Click here to go to LiamEBirge.GitHub.io" />
+						Github.io
 					</a>
 				</div>
 				<div class="linkBox">
-					<a href="https://uvic.ca/" target="_blank">
-						<img src="" alt="Click here to go to UVic.ca" />
+					<a class="linkage" href="https://uvic.ca/" target="_blank">
+						<img class="linkImg" src="data/uvic.jpg" alt="Click here to go to UVic.ca" />
 						UVic.ca
 					</a>
 				</div>
