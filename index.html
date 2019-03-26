@@ -44,31 +44,26 @@
 				border-radius: 4px;
 			}
 		</style>
+		<script src="quote.js" type="text/javascript"></script>
 		<script type="text/javascript">
-			function headerText(){
-				var headerText = document.getElementById("varableHeader");
-				var header1 = "Ey Bruther, What Can I Do For Ye?";
-				var header2 = "What's The Plan Dawg?";
-				var header3 = "How Can I Help Today?";
-				var header4 = "Ready To Help!";
-				var header5 = "Let Me Know What I Can Do For You!";
-				var header6 = "What a nice day to be doing homework...";
-				var header7 = "What in the name of procrastination...!";
-				var randNum = Math.floor((Math.random() * 7) + 1);
-				if (randNum == 1){headerText.innerHTML = header1;}
-				else if (randNum == 2){headerText.innerHTML = header2;}
-				else if (randNum == 3){headerText.innerHTML = header3;}
-				else if (randNum == 4){headerText.innerHTML = header4;}
-				else if (randNum == 5){headerText.innerHTML = header5;}
-				else if (randNum == 6){headerText.innerHTML = header6;}
-				else if (randNum == 7){headerText.innerHTML = header7;}
+			function writeQuote(){
+				var container = document.getElementById("varableHeader");
+				var quoteNumber = Math.floor(Math.random() * 24);
+				//console.log(quoteNumber);
+				var text = document.createElement("h2");
+				text.setAttribute("id", "quoteText");
+				text.innerHTML = callQuote(quoteNumber);
+				if (container.hasChildNodes()) {
+					container.removeChild(container.childNodes[0]);
+					container.appendChild(text);
+				} else {
+					container.appendChild(text);
+				}
 			}
 		</script>
 	</head>
-	<body onload="headerText()">
-		<header>
-			<h1 id="varableHeader"></h1>
-		</header>
+	<body onload="writeQuote()">
+		<header id="varableHeader"></header>
 		<hr />
 		<section>
 			<div id="linkContainer">
