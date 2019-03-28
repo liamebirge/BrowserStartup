@@ -24,7 +24,8 @@ function callQuote(quoteNumber){
 		"If you look at what you have in life, you'll always have more.<br />- Oprah Winfrey",
 		"Let us make our future now, and let us make our dreams tomorrow's reality.<br />- Malala Yousafzai",
 		"You must do the things you think you cannot do.<br />- Eleanor Roosevelt",
-		"We must be willing to let go of the life we planned so as to have the life that is waiting for us.<br />- Joseph Campbell"
+		"We must be willing to let go of the life we planned so as to have the life that is waiting for us.<br />- Joseph Campbell",
+		"A problem well-stated is a problem half solved.<br />- John Dewey"
 	];
 	return quotes[quoteNumber];
 }
